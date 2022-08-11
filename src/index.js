@@ -14,11 +14,19 @@ export default function App() {
 					{" "}
 					This project was coded by Maxine Martinez, and is{" "}
 					<a
-						href="https://github.com/Maxine15x/colorful-weather"
+						href="https://github.com/Maxine15x/colorful-weather-app"
 						target="_blank"
 						rel="noopener noreferrer"
 					>
 						Open-source on GitHub
+					</a>{" "}
+					and{" "}
+					<a
+						href="https://venerable-rabanadas-52b1f8.netlify.app/"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						hosted on Netlify
 					</a>
 				</footer>
 			</div>
