@@ -1,0 +1,27 @@
+.forecast {
+	box-shadow: 8px 5px 5px rgb(111, 71, 133);
+	border: 1px solid rgb(198, 198, 192);
+	border-radius: 18px;
+	text-align: center;
+	margin: 10px auto;
+	padding: 25px;
+}
+
+.forecast-day {
+	color: #0e8fa8;
+	font-weight: bold;
+	font-size: 22px;
+}
+
+.current-forecast-temperatures {
+	color: #6f4886;
+}
+
+.current-forecast-temperatures .forecast-temperature-max {
+	font-size: 18px;
+	margin-left: 10px;
+}
+.current-forest-temperatures .forecast-temperature-min {
+	font-size: 16px;
+	opacity: 0.5;
+}
