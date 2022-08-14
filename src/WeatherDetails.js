@@ -1,7 +1,7 @@
 import React from "react";
 import CurrentDate from "./CurrentDate";
-import WeatherTemperature from "./WeatherTemperature";
 import WeatherIcon from "./WeatherIcon";
+import WeatherTemperature from "./WeatherTemperature";
 
 export default function WeatherDetails(props) {
 	return (
@@ -9,11 +9,9 @@ export default function WeatherDetails(props) {
 			<h1>{props.data.city}</h1>
 			<div className="row">
 				<div className="col-12">
-					<div className="clearfix weather-temperature">
-						<WeatherIcon code={props.data.icon} size={75} />
-						<WeatherTemperature fehrenheit={props.data.temperature} />
-						<img src={props.data.icon} alt="" />
-					</div>
+					<WeatherIcon code={props.data.icon} size={66} />
+					<WeatherTemperature fehrenheit={props.data.temperature} />
+					<img src={props.data.icon} alt="" />
 				</div>
 			</div>
 			<div className="weather-overview">

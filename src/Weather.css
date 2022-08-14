@@ -1,28 +1,28 @@
-.weather-temperature {
+.WeatherDetails {
 	color: #6f4886;
 	text-align: right;
 }
 
-.weather-temperature canvas {
+.WeatherDetails canvas {
 	position: relative;
-	left: -30px;
-	top: 14px;
+	left: -35px;
+	top: 5px;
 }
 
-.weather-temperature .active:hover {
+.WeatherDetails .active:hover {
 	text-decoration: none;
 }
 
 .temperature {
-	position: relative;
-	font-size: 83px;
-	top: 15px;
+	color: #6f4886;
+	font-size: 80px;
 }
 
 .unit {
 	color: #6f4886;
 	position: relative;
 	font-size: 22px;
-	top: -25px;
+	top: -40px;
+	left: -3px;
 	cursor: default;
 }
