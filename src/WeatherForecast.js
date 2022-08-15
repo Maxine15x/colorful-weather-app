@@ -1,51 +1,32 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
+import WeatherIcon from "./WeatherIcon";
 import "./WeatherForecast.css";
 import axios from "axios";
-import ForecastDay from "./ForecastDay";
 
-export default function WeatherForecast(props) {
-	let [loaded, setLoaded] = useState(false);
-	let [forecast, setForecast] = useState(null);
-
-	useEffect(() => {
-		setLoaded(false);
-	}, [props.coordinates]);
-
+export default function WeatherForecast() {
 	function handleResponse(response) {
-		setForecast(response.data.daily);
-		setLoaded(true);
+		console.log(response.data);
 	}
 
-	function load() {
-		let apiKey = "769668820f2d4467990d718542c608e8";
-		let latitude = props.coordinates.lat;
-		let longitude = props.coordinates.lon;
-		let apiUrl = `https://api.openweathermap.org/data/3.0/onecall?lat=${latitude}&lon=${longitude}&appid=&${apiKey}&units=imperial`;
+	let apiKey = "769668820f2d4467990d718542c608e8";
+	let longitude = 40.7;
+	let latitude = 32.0;
+	let apiUrl = `https://api.openweathermap.org/data/3.0/onecall?lat=${latitude}&lon=${longitude}&appid=&${apiKey}&units=imperial`;
 
-		axios.get(apiUrl).then(handleResponse);
-	}
+	axios.get(apiUrl).then(handleResponse);
 
-	if (loaded) {
-		return (
-			<div className="WeatherForecast">
-				<div className="row">
-					{forecast.map(function (dailyForecast, index) {
-						if (index < 5) {
-							return (
-								<div className="col" key={index}>
-									<ForecastDay data={dailyForecast} />
-								</div>
-							);
-						} else {
-							return null;
-						}
-					})}
+	return (
+		<div className="WeatherForecast">
+			<div className="row">
+				<div className="col">
+					<div className="WeatherForecast-day">Monday</div>
+					<WeatherIcon code="01d" size={52} />
+					<div className="WeatherForecast-temperature">
+						<span className="WeatherForecast-temperature-max">95°</span>
+						<span className="WeatherForecast-temperature-min">86°</span>
+					</div>
 				</div>
 			</div>
-		);
-	} else {
-		load();
-
-		return null;
-	}
+		</div>
+	);
 }
