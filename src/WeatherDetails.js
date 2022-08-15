@@ -9,9 +9,10 @@ export default function WeatherDetails(props) {
 			<h1>{props.data.city}</h1>
 			<div className="row">
 				<div className="col-12">
-					<WeatherIcon code={props.data.icon} size={66} />
-					<WeatherTemperature fehrenheit={props.data.temperature} />
-					<img src={props.data.icon} alt="" />
+					<div className="clearfix">
+						<WeatherIcon code={props.data.icon} size={66} />
+						<WeatherTemperature fehrenheit={props.data.temperature} />
+					</div>
 				</div>
 			</div>
 			<div className="weather-overview">

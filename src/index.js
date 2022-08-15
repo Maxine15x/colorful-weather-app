@@ -11,7 +11,6 @@ export default function App() {
 			<div className="container">
 				<Weather defaultCity="Clearwater" />
 				<footer>
-					{" "}
 					This project was coded by Maxine Martinez, and is{" "}
 					<a
 						href="https://github.com/Maxine15x/colorful-weather-app"

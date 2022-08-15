@@ -3,25 +3,27 @@
 	border: 1px solid rgb(198, 198, 192);
 	border-radius: 18px;
 	text-align: center;
-	margin: 10px auto;
-	padding: 25px;
+	margin: 16px auto;
+	padding: 32px;
 }
 
 .WeatherForecast-day {
 	color: #0e8fa8;
 	font-weight: bold;
-	font-size: 22px;
+	font-size: 20px;
+	margin: 3px auto;
+	padding: 8px;
 }
 
 .WeatherForecast-temperature {
-	color: #6f4886;
+	color: #c9719e;
 }
 
 .WeatherForecast-temperature-max {
 	font-size: 18px;
-	margin-left: 10px;
 }
+
 .WeatherForecast-temperature-min {
-	font-size: 16px;
-	opacity: 0.5;
+	font-size: 15px;
+	opacity: 0.8;
 }
