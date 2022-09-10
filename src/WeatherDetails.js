@@ -10,7 +10,7 @@ export default function WeatherDetails(props) {
 			<div className="row">
 				<div className="col-12">
 					<div className="clearfix">
-						<WeatherIcon code={props.data.icon} size={68} />
+						<WeatherIcon code={props.data.icon} size={66} />
 						<WeatherTemperature fehrenheit={props.data.temperature} />
 					</div>
 				</div>
@@ -23,8 +23,12 @@ export default function WeatherDetails(props) {
 								<CurrentDate date={props.data.date} />
 							</li>
 							<li className="text-capitalize">{props.data.description}</li>
-							<li>Feels Like: {props.data.feels_like}%</li>
-							<li>Humidity: {props.data.humidity}%</li>
+							<li>
+							Feels Like: {props.data.feels_like}%
+							</li>
+							<li>
+								Humidity: {props.data.humidity}%
+							</li>
 							<li>Wind Speed: {props.data.wind} mph</li>
 						</ul>
 					</div>

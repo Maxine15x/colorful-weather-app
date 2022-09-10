@@ -15,13 +15,13 @@
 
 .temperature {
 	color: #6f4886;
-	font-size: 80px;
+	font-size: 68px;
 }
 
 .unit {
 	color: #6f4886;
 	position: relative;
 	font-size: 22px;
-	top: -40px;
+	top: -32px;
 	cursor: default;
 }
