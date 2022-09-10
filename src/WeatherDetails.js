@@ -22,13 +22,11 @@ export default function WeatherDetails(props) {
 							<li>
 								<CurrentDate date={props.data.date} />
 							</li>
-							<li className="text-capitalize">{props.data.description}</li>
-							<li>
-							Feels Like: {props.data.feels_like}%
+							<li className="text-capitalize">
+								<b>{props.data.description}</b>
 							</li>
-							<li>
-								Humidity: {props.data.humidity}%
-							</li>
+							<li>Feels Like: {props.data.feels_like}%</li>
+							<li>Humidity: {props.data.humidity}%</li>
 							<li>Wind Speed: {props.data.wind} mph</li>
 						</ul>
 					</div>
